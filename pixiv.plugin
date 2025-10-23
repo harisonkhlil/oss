@@ -1,0 +1,13 @@
+#!name=Pixiv去广告
+#!desc=Remove the bottom ads in pixiv
+#!homepage=https://github.com/harisonkhlil/oss
+#!raw-url=https://github.com/harisonkhlil/oss/raw/main/pixiv.plugin
+#!tag = 去广告，pixiv
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1087.png
+#!system = iOS, iPadOS
+
+[Script]
+http-response ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token) script-path=https://github.com/ddgksf2013/Scripts/raw/master/pixivAds.js, requires-body=true, timeout=60, tag=pixivAds
+
+[MITM]
+hostname = oauth.secure.pixiv.net
