@@ -1,0 +1,13 @@
+#!name=Pixiv去广告
+#!desc=Remove the bottom ads in pixiv
+#!homepage=https://github.com/harisonkhlil/oss
+#!raw-url=https://raw.githubusercontent.com/harisonkhlil/oss/refs/heads/main/vipCrack.plugin
+#!tag = vip
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1077.png
+#!system = iOS, iPadOS
+
+[Script]
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/harisonkhlil/oss/refs/heads/main/buyitunes.vip.js, requires-body=true, timeout=60
+
+[MITM]
+hostname = buy.itunes.apple.com
