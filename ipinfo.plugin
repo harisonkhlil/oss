@@ -1,0 +1,12 @@
+#!name=节点质量检测工具
+#!desc=适用于Loon的节点质量检测工具，可进行IP归属地，IP质量，IP原生等查询。请在所有节点页面选择一个节点长按，出现菜单后进行测试。
+#!author=cuttlefish[https://github.com/ddgksf2013]
+#!tag=IP质量检测
+#!loon_version=3.2.4(787)
+#!homepage=https://github.com/harisonkhlil/oss
+#!raw-url=https://raw.githubusercontent.com/harisonkhlil/oss/refs/heads/main/ipinfo.plugin
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1008.png
+#!date=2025-12-16 23:31:23
+
+[Script]
+generic script-path=https://github.com/harisonkhlil/oss/blob/main/server-info-pure.js, timeout=10
